@@ -19802,6 +19802,7 @@ void wr_sprintf( WRValue* stackTop, const int argn, WRContext* c )
 }
 
 //------------------------------------------------------------------------------
+/*
 void wr_printf( WRValue* stackTop, const int argn, WRContext* c )
 {
 	unsigned int chars = 0;
@@ -19817,7 +19818,7 @@ void wr_printf( WRValue* stackTop, const int argn, WRContext* c )
 	stackTop->p2 = WR_INT;
 	stackTop->i = chars;
 }
-
+*/
 //------------------------------------------------------------------------------
 void wr_isspace( WRValue* stackTop, const int argn, WRContext* c )
 {
@@ -20262,7 +20263,7 @@ void wr_loadStringLib( WRState* w )
 	wr_registerLibraryFunction( w, "str::sprintf", wr_sprintf );
 	wr_registerLibraryFunction( w, "str::format", wr_format );
 	
-	wr_registerLibraryFunction( w, "str::printf", wr_printf );
+	//wr_registerLibraryFunction( w, "str::printf", wr_printf );
 	wr_registerLibraryFunction( w, "str::isspace", wr_isspace );
 	wr_registerLibraryFunction( w, "str::isdigit", wr_isdigit );
 	wr_registerLibraryFunction( w, "str::isalpha", wr_isalpha );

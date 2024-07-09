@@ -1,0 +1,7 @@
+*.d
+*.o
+/wrench
+/_serialize_test.bin
+/_std_file_test.txt
+.vscode
+examples/basic
